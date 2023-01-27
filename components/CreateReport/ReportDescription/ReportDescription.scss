@@ -1,0 +1,72 @@
+.reportDescriptionContainer {   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 65px;
+    height: fit-content;
+
+    > div:not(:last-child) {
+        padding: 30px 0 23px 13px;
+        background-color: #F0F4FD;
+        border-bottom: 1px solid #8D8D8D;
+        display: flex;
+        justify-content: flex-start;
+
+        > p:nth-of-type(1) {
+            width: 50%;
+            font-weight: 500;
+            font-size: 0.7rem;
+            color: #000000;
+            margin: 0;
+            padding-right: 30px;
+        }
+
+        > p:nth-of-type(2) {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #000000;
+        }
+
+        > span {
+            margin-left: 5px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: #000000;
+        }
+    }
+
+    > div:nth-of-type(3) {
+        align-items: center;
+    }
+
+    > div:nth-of-type(4) {
+        display: flex;
+        justify-content: center;
+        padding: 9px 0;
+        background-color: #D4E7F5;
+
+        > button {
+            background-color: #42C960;
+            border-radius: 6px;
+            padding: 13px 31px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #FFFFFF;
+            transition-duration: 0.4s;
+            outline: none;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #3d8e4f;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .reportDescriptionContainer {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+}

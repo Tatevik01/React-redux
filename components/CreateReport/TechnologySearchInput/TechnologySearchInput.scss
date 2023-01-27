@@ -1,0 +1,41 @@
+.technologySearchInputContainer {
+    position: relative;
+    margin-right: 9px;
+
+    > input {
+        background-color: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 10px 80px 9px 16px;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #6E6B6B;
+        outline: none;
+    }
+
+    > i {
+        position: absolute;
+        color: #E0E9F3;
+        opacity: 0.8;
+        top: calc(50% - 0.5rem);
+        right: 14px;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .technologySearchInputContainer {
+        > input {
+            padding-right: 60px;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .technologySearchInputContainer {
+        > input {
+            padding-right: 35px;
+        }
+    }
+}

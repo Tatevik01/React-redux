@@ -1,0 +1,127 @@
+.reportsContainer {
+    position: relative;
+    overflow: hidden;
+
+    > div:nth-of-type(1) {
+        display: flex;
+        padding: 22px 52px 0 52px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+
+        > p:nth-of-type(1) {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #000000;
+        }
+
+        > a:nth-of-type(1) {
+            text-decoration: none;
+            font-size: 0.7rem;
+            background-color: #3898DE;
+            border-radius: 6px;
+            color: #FFFFFF;
+            padding: 10px 14px;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: #3a82b7; 
+            }
+
+            &:visited {
+                color: 'inherit';
+            }
+        }
+    }
+
+    > .noReportsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
+        margin-bottom: 620px;
+
+        > img {
+            margin-bottom: 60px;
+        }
+
+        > p {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #000000;
+            margin: 0 0 41px 0;
+        }
+        
+        > div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+
+            > p {
+                margin: 0 0 10px 0;
+                color: #000000;
+                font-size: 0.8rem;
+            }
+
+            > a {
+                text-decoration: none;
+                color: #3898DE;
+                margin-bottom: 10px;
+                font-size: 0.8rem;
+
+                &:visited {
+                    color: #3898DE
+                }
+            }
+        }
+    }
+
+    > .haveReportsContainer {
+        padding: 22px 52px;
+        min-height: 500px;
+    }
+}
+
+@media(max-width: 700px) {
+    .reportsContainer {
+        > div:nth-of-type(1) {
+            padding: 22px 30px 0 30px;
+        }
+
+        > .noReportsContainer {
+            margin-bottom: 400px;
+
+            > img {
+                width: 75px;
+                margin-bottom: 50px;
+            }
+        }
+
+        > .haveReportsContainer {
+            padding: 22px 30px;
+            min-height: 400px;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .reportsContainer {
+        > div:nth-of-type(1) {
+            padding: 20px 15px 0 15px;
+        }
+
+        > .noReportsContainer {
+            margin-bottom: 250px;
+
+            > img {
+                width: 60px;
+                margin-bottom: 40px;
+            }
+        }
+
+        > .haveReportsContainer {
+            padding: 20px 15px;
+            min-height: 300px;
+        }
+    }
+}
